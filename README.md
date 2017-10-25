@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## User Stories
+[Link to Trello User Stories](https://trello.com/b/4HTI6TT0/ca-project-hackathon-hat-shop)
+![User Stories](/docs/img/trello.png)
 
-Things you may want to cover:
+- [ ] User Stories
+- [x] User Stories
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+----
+___
