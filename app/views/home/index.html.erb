@@ -1,0 +1,24 @@
+<%= render "nav" %>
+
+<h1>Mug Me</h1>
+<h3>Fullfilling yout mug need since 2017</h3>
+
+<div class="container user_photo_feed">
+    <div class="row justify-content-start">
+      <% @item.reverse.each do |item| %>
+
+      <div class="col-6 col-sm-4">
+          <div class="card items_card">
+            <div class="card-body">
+              <%= link_to (image_tag (item.image_url(:angle=>"exif", :gravity=>"auto", :height=>200, :width=>200, :crop=>"fill")), :class => 'card-img-top feed_grid'), item_path(item.id) %>
+              <div class="text_box">
+                <p class="card-text"><span class="item_name"><%= item.name %></span></p>
+                <p class="card-text"><span class="item_price">$ <%= item.price %></span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <% end %>
+    </div>
+</div>
